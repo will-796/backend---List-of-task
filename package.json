@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.8",
+    "express": "^4.17.1",
+    "knex": "^0.21.6",
+    "sqlite3": "^5.0.0",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.63"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node-dev src/server.ts",
+    "knex:migrate": "npx knex --knexfile knexfile.ts migrate:latest",
+    "knex:seeds": "npx knex --knexfile knexfile.ts seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
